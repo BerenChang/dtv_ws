@@ -1,0 +1,117 @@
+[0.000000] (-) TimerEvent: {}
+[0.000247] (dtv_core) JobQueued: {'identifier': 'dtv_core', 'dependencies': OrderedDict()}
+[0.000430] (dtv_core) JobStarted: {'identifier': 'dtv_core'}
+[0.008406] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'cmake'}
+[0.009213] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'build'}
+[0.010322] (dtv_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/beren/dtv_ws/build/dtv_core', '--', '-j16', '-l16'], 'cwd': '/home/beren/dtv_ws/build/dtv_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'beren'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/lib:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/beren'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1722'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1189c4a269ada556a229702266dacfdd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'beren'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'beren'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/tracked_exp_ws/src/marble_hd2:/home/tracked_exp_ws/src/csiro'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/beren/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/beren-rog:@/tmp/.ICE-unix/1722,unix/beren-rog:/tmp/.ICE-unix/1722'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dd42a48b_0ac3_4565_a072_b009d86f7094'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9NDT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.127'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/beren/dtv_ws/build/dtv_core'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1189c4a269ada556a229702266dacfdd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/local/lib/python3.10/dist-packages:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble')]), 'shell': False}
+[0.052758] (dtv_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dtv_controller\x1b[0m\n'}
+[0.069081] (dtv_core) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o\x1b[0m\n'}
+[0.099703] (-) TimerEvent: {}
+[0.200053] (-) TimerEvent: {}
+[0.300367] (-) TimerEvent: {}
+[0.400838] (-) TimerEvent: {}
+[0.501271] (-) TimerEvent: {}
+[0.601655] (-) TimerEvent: {}
+[0.702048] (-) TimerEvent: {}
+[0.802509] (-) TimerEvent: {}
+[0.902889] (-) TimerEvent: {}
+[1.003299] (-) TimerEvent: {}
+[1.103631] (-) TimerEvent: {}
+[1.203955] (-) TimerEvent: {}
+[1.304272] (-) TimerEvent: {}
+[1.404617] (-) TimerEvent: {}
+[1.504932] (-) TimerEvent: {}
+[1.605252] (-) TimerEvent: {}
+[1.705583] (-) TimerEvent: {}
+[1.805903] (-) TimerEvent: {}
+[1.906218] (-) TimerEvent: {}
+[1.946915] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.947159] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.947249] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.947358] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.947434] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.947501] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.947565] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.947630] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.947693] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.947757] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.947833] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.947900] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.947977] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Controller::joystickCallback(const Joy&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.948048] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:21:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst _buttons_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<int>\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.948126] (dtv_core) StderrLine: {'line': b'   21 |            RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Command: %f"\x1b[m\x1b[K, msg.buttons);\n'}
+[1.948192] (dtv_core) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.948235] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:21:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[1.948265] (dtv_core) StderrLine: {'line': b'   21 |            RCLCPP_INFO(this->get_logger(), "Command: \x1b[01;36m\x1b[K%f\x1b[m\x1b[K", msg.buttons);\n'}
+[1.948300] (dtv_core) StderrLine: {'line': b'      |                                                      \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[1.948349] (dtv_core) StderrLine: {'line': b'      |                                                       \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[1.948378] (dtv_core) StderrLine: {'line': b'      |                                                       \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[2.006358] (-) TimerEvent: {}
+[2.106679] (-) TimerEvent: {}
+[2.206993] (-) TimerEvent: {}
+[2.307327] (-) TimerEvent: {}
+[2.407659] (-) TimerEvent: {}
+[2.508019] (-) TimerEvent: {}
+[2.608358] (-) TimerEvent: {}
+[2.708769] (-) TimerEvent: {}
+[2.809085] (-) TimerEvent: {}
+[2.909405] (-) TimerEvent: {}
+[3.009699] (-) TimerEvent: {}
+[3.109974] (-) TimerEvent: {}
+[3.210339] (-) TimerEvent: {}
+[3.310664] (-) TimerEvent: {}
+[3.410988] (-) TimerEvent: {}
+[3.511322] (-) TimerEvent: {}
+[3.611642] (-) TimerEvent: {}
+[3.711965] (-) TimerEvent: {}
+[3.812296] (-) TimerEvent: {}
+[3.912629] (-) TimerEvent: {}
+[4.012940] (-) TimerEvent: {}
+[4.113253] (-) TimerEvent: {}
+[4.213577] (-) TimerEvent: {}
+[4.313993] (-) TimerEvent: {}
+[4.414324] (-) TimerEvent: {}
+[4.514645] (-) TimerEvent: {}
+[4.614964] (-) TimerEvent: {}
+[4.715257] (-) TimerEvent: {}
+[4.815603] (-) TimerEvent: {}
+[4.915930] (-) TimerEvent: {}
+[5.016266] (-) TimerEvent: {}
+[5.116582] (-) TimerEvent: {}
+[5.216919] (-) TimerEvent: {}
+[5.317232] (-) TimerEvent: {}
+[5.417582] (-) TimerEvent: {}
+[5.517873] (-) TimerEvent: {}
+[5.618190] (-) TimerEvent: {}
+[5.718512] (-) TimerEvent: {}
+[5.818843] (-) TimerEvent: {}
+[5.892060] (dtv_core) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dtv_controller\x1b[0m\n'}
+[5.918969] (-) TimerEvent: {}
+[6.019310] (-) TimerEvent: {}
+[6.119648] (-) TimerEvent: {}
+[6.159234] (dtv_core) StdoutLine: {'line': b'[100%] Built target dtv_controller\n'}
+[6.170194] (dtv_core) CommandEnded: {'returncode': 0}
+[6.199974] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'install'}
+[6.208445] (dtv_core) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/beren/dtv_ws/build/dtv_core'], 'cwd': '/home/beren/dtv_ws/build/dtv_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'beren'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/lib:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/beren'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1722'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1189c4a269ada556a229702266dacfdd'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'beren'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'beren'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/tracked_exp_ws/src/marble_hd2:/home/tracked_exp_ws/src/csiro'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/beren/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/beren-rog:@/tmp/.ICE-unix/1722,unix/beren-rog:/tmp/.ICE-unix/1722'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dd42a48b_0ac3_4565_a072_b009d86f7094'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F9NDT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.127'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/beren/dtv_ws/build/dtv_core'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1189c4a269ada556a229702266dacfdd'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/local/lib/python3.10/dist-packages:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble')]), 'shell': False}
+[6.214469] (dtv_core) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.214689] (dtv_core) StdoutLine: {'line': b'-- Installing: /home/beren/dtv_ws/install/dtv_core/lib/dtv_core/dtv_controller\n'}
+[6.217836] (dtv_core) StdoutLine: {'line': b'-- Set runtime path of "/home/beren/dtv_ws/install/dtv_core/lib/dtv_core/dtv_controller" to ""\n'}
+[6.218141] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/package_run_dependencies/dtv_core\n'}
+[6.218293] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/parent_prefix_path/dtv_core\n'}
+[6.218543] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.sh\n'}
+[6.218634] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.dsv\n'}
+[6.218752] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.sh\n'}
+[6.218835] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.dsv\n'}
+[6.218907] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.bash\n'}
+[6.218978] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.sh\n'}
+[6.219045] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.zsh\n'}
+[6.219092] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.dsv\n'}
+[6.219123] (dtv_core) StdoutLine: {'line': b'-- Installing: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.dsv\n'}
+[6.219156] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/packages/dtv_core\n'}
+[6.219189] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig.cmake\n'}
+[6.219221] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig-version.cmake\n'}
+[6.219259] (dtv_core) StdoutLine: {'line': b'-- Up-to-date: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.xml\n'}
+[6.219726] (-) TimerEvent: {}
+[6.220291] (dtv_core) CommandEnded: {'returncode': 0}
+[6.260846] (dtv_core) JobEnded: {'identifier': 'dtv_core', 'rc': 0}
+[6.261686] (-) EventReactorShutdown: {}

@@ -1,0 +1,24 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable dtv_controller[0m
+[100%] Built target dtv_controller
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/dtv.launch.py
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/dtv.launch.yaml
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/gz.launch.py
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/lib/dtv_core/dtv_controller
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/package_run_dependencies/dtv_core
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/parent_prefix_path/dtv_core
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.sh
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.dsv
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.bash
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.sh
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.zsh
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.dsv
+-- Symlinking: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.dsv
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/packages/dtv_core
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig.cmake
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig-version.cmake
+-- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.xml

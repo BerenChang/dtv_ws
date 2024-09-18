@@ -1,0 +1,14 @@
+[0.010s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[0.069s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[1.957s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[1.957s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:35:60:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kstd::chrono::milliseconds[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000> >[m[K’} to type ‘[01m[Kfloat[m[K’
+[1.958s]    35 |             cmd_vel.linear.x = cmd_vel.linear.x + thrust * [01;31m[K(float)dt[m[K * 1000;
+[1.958s]       |                                                            [01;31m[K^~~~~~~~~[m[K
+[1.958s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:61:[m[K [01;31m[Kerror: [m[Kinvalid cast from type ‘[01m[Kstd::chrono::milliseconds[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000> >[m[K’} to type ‘[01m[Kfloat[m[K’
+[1.958s]    36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * [01;31m[K(float)dt[m[K * 1000;
+[1.958s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[3.721s] gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+[3.721s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+[3.722s] gmake: *** [Makefile:146: all] Error 2
+[3.724s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

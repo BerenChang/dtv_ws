@@ -1,0 +1,87 @@
+[0.000000] (-) TimerEvent: {}
+[0.000203] (dtv_core) JobQueued: {'identifier': 'dtv_core', 'dependencies': OrderedDict()}
+[0.000259] (dtv_core) JobStarted: {'identifier': 'dtv_core'}
+[0.007037] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'cmake'}
+[0.007402] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'build'}
+[0.007810] (dtv_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/beren/dtv_ws/build/dtv_core', '--', '-j16', '-l16'], 'cwd': '/home/beren/dtv_ws/build/dtv_core', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'beren'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/lib:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/beren'), ('OLDPWD', '/home/beren'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1573'), ('SYSTEMD_EXEC_PID', '1725'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7349'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/beren/dtv_ws/install:/home/beren/ros2_industrial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'beren'), ('JOURNAL_STREAM', '8:8703'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'beren'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/tracked_exp_ws/src/marble_hd2:/home/tracked_exp_ws/src/csiro'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/beren/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/beren-rog:@/tmp/.ICE-unix/1697,unix/beren-rog:/tmp/.ICE-unix/1697'), ('INVOCATION_ID', '948351b55e1a46eb98f431d2dd963829'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QVFKT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/beren/dtv_ws/install/dtv_core:/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:c09d7a29-8590-4b59-a1d6-56ca579dc199'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/beren/dtv_ws/build/dtv_core'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/local/lib/python3.10/dist-packages:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/beren/dtv_ws/install/dtv_core:/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble')]), 'shell': False}
+[0.047916] (dtv_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dtv_controller\x1b[0m\n'}
+[0.062406] (dtv_core) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o\x1b[0m\n'}
+[0.099414] (-) TimerEvent: {}
+[0.199696] (-) TimerEvent: {}
+[0.300015] (-) TimerEvent: {}
+[0.400337] (-) TimerEvent: {}
+[0.500676] (-) TimerEvent: {}
+[0.600999] (-) TimerEvent: {}
+[0.701323] (-) TimerEvent: {}
+[0.801661] (-) TimerEvent: {}
+[0.901986] (-) TimerEvent: {}
+[1.002310] (-) TimerEvent: {}
+[1.102657] (-) TimerEvent: {}
+[1.202986] (-) TimerEvent: {}
+[1.303312] (-) TimerEvent: {}
+[1.403650] (-) TimerEvent: {}
+[1.503967] (-) TimerEvent: {}
+[1.604292] (-) TimerEvent: {}
+[1.704615] (-) TimerEvent: {}
+[1.724426] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.724664] (dtv_core) StderrLine: {'line': b'   37 |  rclcpp::Publisher<geometry_msgs/msg/Twist\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr cmd_vel_pub_;\n'}
+[1.724762] (dtv_core) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.724835] (dtv_core) StderrLine: {'line': b'\n'}
+[1.725307] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:37:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[1.725427] (dtv_core) StderrLine: {'line': b'   37 | lcpp::Publisher<geometry_msgs/msg/Twist>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K cmd_vel_pub_;\n'}
+[1.725511] (dtv_core) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.725582] (dtv_core) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[1.727238] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:37:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.727370] (dtv_core) StderrLine: {'line': b'   37 | isher<geometry_msgs/msg/Twist>::SharedPtr \x1b[01;31m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K;\n'}
+[1.727454] (dtv_core) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.727545] (dtv_core) StderrLine: {'line': b'\n'}
+[1.738477] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KController::Controller()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.738835] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.738935] (dtv_core) StderrLine: {'line': b'   19 |             \x1b[01;31m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs/msg/Twist>("/model/simple_tracked/cmd_vel", 100);\n'}
+[1.739019] (dtv_core) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.739094] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[1.739165] (dtv_core) StderrLine: {'line': b'   19 |             cmd_vel_pub_ = this->\x1b[01;31m\x1b[Kcreate_publisher<geometry_msgs/msg/Twist>\x1b[m\x1b[K("/model/simple_tracked/cmd_vel", 100);\n'}
+[1.739229] (dtv_core) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.739294] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KController::create_publisher<<expression error> >(const char [30], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.739361] (dtv_core) StderrLine: {'line': b'   19 | \x1b[01;31m\x1b[K>create_publisher<geometry_msgs/msg/Twist>("/model/simple_tracked/cmd_vel", 100)\x1b[m\x1b[K;\n'}
+[1.739451] (dtv_core) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.739519] (dtv_core) StderrLine: {'line': b'\n'}
+[1.739583] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.739670] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.739746] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.739811] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.739875] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.739944] (dtv_core) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[1.740008] (dtv_core) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.740075] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.740141] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.740204] (dtv_core) StderrLine: {'line': b'   19 | \x1b[01;31m\x1b[K>create_publisher<geometry_msgs/msg/Twist>("/model/simple_tracked/cmd_vel", 100)\x1b[m\x1b[K;\n'}
+[1.740273] (dtv_core) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.740305] (dtv_core) StderrLine: {'line': b'\n'}
+[1.749719] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Controller::timerCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.749859] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:33:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.749959] (dtv_core) StderrLine: {'line': b'   33 |             \x1b[01;31m\x1b[Kcmd_vel_pub_\x1b[m\x1b[K->publish(cmd_vel);\n'}
+[1.750031] (dtv_core) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.804829] (-) TimerEvent: {}
+[1.905158] (-) TimerEvent: {}
+[2.005480] (-) TimerEvent: {}
+[2.105817] (-) TimerEvent: {}
+[2.206137] (-) TimerEvent: {}
+[2.306462] (-) TimerEvent: {}
+[2.406807] (-) TimerEvent: {}
+[2.507170] (-) TimerEvent: {}
+[2.607791] (-) TimerEvent: {}
+[2.708111] (-) TimerEvent: {}
+[2.808434] (-) TimerEvent: {}
+[2.908760] (-) TimerEvent: {}
+[3.009083] (-) TimerEvent: {}
+[3.109411] (-) TimerEvent: {}
+[3.209733] (-) TimerEvent: {}
+[3.310057] (-) TimerEvent: {}
+[3.395047] (dtv_core) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1\n'}
+[3.395291] (dtv_core) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2\n'}
+[3.395590] (dtv_core) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.398404] (dtv_core) CommandEnded: {'returncode': 2}
+[3.410156] (-) TimerEvent: {}
+[3.436754] (dtv_core) JobEnded: {'identifier': 'dtv_core', 'rc': 2}
+[3.447213] (-) EventReactorShutdown: {}

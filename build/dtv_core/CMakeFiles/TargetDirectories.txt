@@ -1,0 +1,10 @@
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/uninstall.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/dtv_core_uninstall.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/dtv_controller.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/test.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/edit_cache.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/rebuild_cache.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/list_install_components.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/install.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/install/local.dir
+/home/beren/dtv_ws/build/dtv_core/CMakeFiles/install/strip.dir

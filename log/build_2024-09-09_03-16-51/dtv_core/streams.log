@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.064s] [100%] Built target dtv_controller
+[0.074s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.114s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/beren/dtv_ws/build/dtv_core
+[0.120s] -- Install configuration: ""
+[0.120s] -- Execute custom install script
+[0.120s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/dtv.launch.py
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/dtv.launch.yaml
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/lib/dtv_core/dtv_controller
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/package_run_dependencies/dtv_core
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/parent_prefix_path/dtv_core
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.sh
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.dsv
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.sh
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.dsv
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.bash
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.sh
+[0.121s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.zsh
+[0.122s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.dsv
+[0.122s] -- Symlinking: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.dsv
+[0.131s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/packages/dtv_core
+[0.131s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig.cmake
+[0.131s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig-version.cmake
+[0.131s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.xml
+[0.133s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/beren/dtv_ws/build/dtv_core

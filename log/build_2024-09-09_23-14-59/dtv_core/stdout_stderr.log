@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:33:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::chrono::milliseconds[m[K’ {aka ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000> >[m[K’} is not a template
+   33 |            double dt = (current_time - prev_time).to_chrono<[01;31m[Kstd[m[K::chrono::milliseconds<double>>() / 1.0s;
+      |                                                             [01;31m[K^~~[m[K
+
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:33:101:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+   33 | ime - prev_time).to_chrono<std::chrono::milliseconds<double>>() / [01;31m[K1.0s[m[K;
+      |                                                                   [01;31m[K^~~~[m[K
+
+gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,33 @@
+[0.011s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[2.128s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[2.128s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KString[m[K’?
+[2.128s]    19 |        cmd_vel_pub_ = this->create_publisher<std_msgs::msg::[01;31m[Kstring[m[K>("model/simple_tracked/link/left_track/track_cmd_vel", 10);
+[2.128s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.128s]       |                                                             [32m[KString[m[K
+[2.128s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::create_publisher<<expression error> >(const char [51], int)[m[K’
+[2.129s]    19 | cmd_vel_pub_ = [01;31m[Kthis->create_publisher<std_msgs::msg::string>("model/simple_tracked/link/left_track/track_cmd_vel", 10)[m[K;
+[2.129s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.129s] 
+[2.129s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.129s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[2.129s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.129s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[2.129s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.129s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.129s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.129s]    19 | cmd_vel_pub_ = [01;31m[Kthis->create_publisher<std_msgs::msg::string>("model/simple_tracked/link/left_track/track_cmd_vel", 10)[m[K;
+[2.129s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.129s] 
+[2.134s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[2.134s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KString[m[K’?
+[2.134s]    30 |             auto message = std_msgs::msg::[01;31m[Kstring[m[K();
+[2.134s]       |                                           [01;31m[K^~~~~~[m[K
+[2.134s]       |                                           [32m[KString[m[K
+[3.807s] gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+[3.807s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+[3.807s] gmake: *** [Makefile:146: all] Error 2
+[3.810s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

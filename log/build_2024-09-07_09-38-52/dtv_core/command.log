@@ -1,0 +1,4 @@
+Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/beren/dtv_ws/src/dtv_core -DCMAKE_INSTALL_PREFIX=/home/beren/dtv_ws/install/dtv_core
+Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/beren/dtv_ws/src/dtv_core -DCMAKE_INSTALL_PREFIX=/home/beren/dtv_ws/install/dtv_core
+Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

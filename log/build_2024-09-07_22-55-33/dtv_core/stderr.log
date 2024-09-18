@@ -1,0 +1,7 @@
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:29:25:[m[K [01;31m[Kerror: [m[K‘[01m[KController::cmd_vel_pub_[m[K’ is not a class, namespace, or enumeration
+   29 |             Controller::[01;31m[Kcmd_vel_pub_[m[K::publish(Controller::thrust);
+      |                         [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

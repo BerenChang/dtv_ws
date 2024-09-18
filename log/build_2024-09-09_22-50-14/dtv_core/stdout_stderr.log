@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:35:30:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’} and ‘[01m[Kstd::chrono::duration<float, std::ratio<1, 1000> >[m[K’)
+   35 |             [01;31m[Kcmd_vel.linear.x += thrust * dt * 1000[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:31:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’} and ‘[01m[Kstd::chrono::duration<float, std::ratio<1, 1000> >[m[K’)
+   36 |             [01;31m[Kcmd_vel.angular.y += steer * dt * 1000[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

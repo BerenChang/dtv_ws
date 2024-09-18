@@ -1,0 +1,6 @@
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:42:9:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   42 |         [01;31m[Kauto[m[K cmd_vel = geometry_msgs::msg::Twist();
+      |         [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

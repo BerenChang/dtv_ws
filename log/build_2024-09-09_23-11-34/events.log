@@ -1,0 +1,305 @@
+[0.000000] (-) TimerEvent: {}
+[0.000672] (dtv_core) JobQueued: {'identifier': 'dtv_core', 'dependencies': OrderedDict()}
+[0.001246] (dtv_core) JobStarted: {'identifier': 'dtv_core'}
+[0.008202] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'cmake'}
+[0.009049] (dtv_core) JobProgress: {'identifier': 'dtv_core', 'progress': 'build'}
+[0.009105] (dtv_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/beren/dtv_ws/build/dtv_core', '--', '-j16', '-l16'], 'cwd': '/home/beren/dtv_ws/build/dtv_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7890/'), ('no_proxy', 'localhost,127.0.0.1,::1'), ('LANGUAGE', 'en_CA:en'), ('USER', 'beren'), ('all_proxy', 'socks://127.0.0.1:7890/'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/lib:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/beren'), ('OLDPWD', '/home/beren/dtv_ws/src/dtv_core'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1725'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:7890/'), ('COLCON_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'beren'), ('ALL_PROXY', 'socks://127.0.0.1:7890/'), ('http_proxy', 'http://127.0.0.1:7890/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'beren'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/tracked_exp_ws/src/marble_hd2:/home/tracked_exp_ws/src/csiro'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/beren/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/beren-rog:@/tmp/.ICE-unix/1697,unix/beren-rog:/tmp/.ICE-unix/1697'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f932fb77_0f3b_4003_ba25_4675d424e9fb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QVFKT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/beren/dtv_ws/build/dtv_core'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/beren/ros2_industrial_ws/install/myworkcell_core/local/lib/python3.10/dist-packages:/home/beren/ros2_industrial_ws/install/fake_ar_publisher/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7890/'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/beren/ros2_industrial_ws/install/myworkcell_moveit_config:/home/beren/ros2_industrial_ws/install/myworkcell_support:/home/beren/ros2_industrial_ws/install/myworkcell_core:/home/beren/ros2_industrial_ws/install/fake_ar_publisher:/opt/ros/humble')]), 'shell': False}
+[0.053966] (dtv_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dtv_controller\x1b[0m\n'}
+[0.069999] (dtv_core) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o\x1b[0m\n'}
+[0.099965] (-) TimerEvent: {}
+[0.200356] (-) TimerEvent: {}
+[0.300856] (-) TimerEvent: {}
+[0.401406] (-) TimerEvent: {}
+[0.501972] (-) TimerEvent: {}
+[0.602482] (-) TimerEvent: {}
+[0.702910] (-) TimerEvent: {}
+[0.803328] (-) TimerEvent: {}
+[0.903755] (-) TimerEvent: {}
+[1.004167] (-) TimerEvent: {}
+[1.104544] (-) TimerEvent: {}
+[1.204961] (-) TimerEvent: {}
+[1.305357] (-) TimerEvent: {}
+[1.405805] (-) TimerEvent: {}
+[1.506229] (-) TimerEvent: {}
+[1.606610] (-) TimerEvent: {}
+[1.706984] (-) TimerEvent: {}
+[1.807340] (-) TimerEvent: {}
+[1.907723] (-) TimerEvent: {}
+[2.008145] (-) TimerEvent: {}
+[2.108518] (-) TimerEvent: {}
+[2.152540] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Controller::timerCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.152771] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:33:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::milliseconds\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<long int, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99} is not a template\n'}
+[2.152861] (dtv_core) StderrLine: {'line': b'   33 | ono::milliseconds dt = (current_time - prev_time).to_chrono<\x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::chrono::milliseconds<float>>();\n'}
+[2.152966] (dtv_core) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.153037] (dtv_core) StderrLine: {'line': b'\n'}
+[2.153602] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:35:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid cast from type \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99 to type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.153699] (dtv_core) StderrLine: {'line': b'   35 |             cmd_vel.linear.x = cmd_vel.linear.x + \x1b[01;31m\x1b[K(double) (thrust * dt * 1000)\x1b[m\x1b[K;\n'}
+[2.153766] (dtv_core) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.153937] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[2.154009] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = \x1b[32m\x1b[Kcmd_vel.angular.y\x1b[m\x1b[K \x1b[01;31m\x1b[K+\x1b[m\x1b[K \x1b[34m\x1b[Ksteer * dt * 1000\x1b[m\x1b[K;\n'}
+[2.154077] (dtv_core) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.154136] (dtv_core) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[2.154275] (dtv_core) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[K|\x1b[m\x1b[K              \x1b[34m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\n'}
+[2.154342] (dtv_core) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type {aka double}\x1b[m\x1b[K\n'}
+[2.154407] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.154471] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[2.154527] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.154588] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.154642] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:585:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.154708] (dtv_core) StderrLine: {'line': b'  585 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename reverse_iterator<_Iterator>::difference_type __n,\n'}
+[2.154763] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.154816] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:585:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.154895] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.154963] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.155196] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.155269] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[2.155328] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:63\x1b[m\x1b[K,\n'}
+[2.155457] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.155677] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.155749] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1700:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::operator+(typename std::move_iterator<_IteratorL>::difference_type, const std::move_iterator<_IteratorL>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.155979] (dtv_core) StderrLine: {'line': b' 1700 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(typename move_iterator<_Iterator>::difference_type __n,\n'}
+[2.156062] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.156126] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_iterator.h:1700:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.156182] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.156236] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.156287] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.156335] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.156384] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.156433] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.156486] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.156545] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.156619] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.156679] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.156737] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.156796] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6095:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.156859] (dtv_core) StderrLine: {'line': b' 6095 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[2.156939] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.156998] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6095:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.157051] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.157112] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.157171] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.157227] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[2.157285] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.157343] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.157402] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.157460] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.157517] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.157576] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.157634] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.157693] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.157762] (dtv_core) StderrLine: {'line': b' 1169 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[2.157823] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.157886] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1169:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.157961] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.158023] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.158085] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.158149] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:56\x1b[m\x1b[K,\n'}
+[2.158206] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.158266] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.158334] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.158397] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.158455] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.158517] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.158583] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.158645] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.158712] (dtv_core) StderrLine: {'line': b' 1189 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)\n'}
+[2.158766] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.158829] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.tcc:1189:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.158902] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.158974] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.159036] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.159097] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.159158] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.159219] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.159272] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.159318] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.159363] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.159406] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.159448] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.159488] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.159532] (dtv_core) StderrLine: {'line': b' 6132 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[2.159574] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.159616] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6132:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.159657] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.159709] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.159752] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.159795] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.159863] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.159940] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.160001] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.160060] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.160118] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.160175] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.160236] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.160294] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.160372] (dtv_core) StderrLine: {'line': b' 6148 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)\n'}
+[2.160439] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.160506] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6148:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.160566] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.160633] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.160691] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.160756] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.160813] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.160877] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.160951] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.161009] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.161071] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.161127] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.161195] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.161254] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6160:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.161318] (dtv_core) StderrLine: {'line': b' 6160 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[2.161378] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.161436] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6160:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.161485] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.161545] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.161600] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.161665] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.161724] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.161783] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.161839] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.161908] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.161973] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.162033] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.162094] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.162156] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.162221] (dtv_core) StderrLine: {'line': b' 6166 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,\n'}
+[2.162285] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.162341] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6166:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.162402] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.162486] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.162549] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.162612] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.162676] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.162736] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.162797] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.162859] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.162943] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.163011] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.163076] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.163142] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6172:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.163203] (dtv_core) StderrLine: {'line': b' 6172 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[2.163264] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.163323] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6172:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.163385] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.163451] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.163513] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.163576] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.163633] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.163693] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.163764] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.163823] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.163900] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.163953] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.164022] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.164087] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.164146] (dtv_core) StderrLine: {'line': b' 6194 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const _CharT* __lhs,\n'}
+[2.164206] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.164265] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6194:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.164327] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst _CharT*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.164390] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.164454] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.164516] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.164572] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.164638] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.164700] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.164761] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.164824] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.164899] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.164981] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.165050] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(_CharT, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.165114] (dtv_core) StderrLine: {'line': b' 6200 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(_CharT __lhs,\n'}
+[2.165175] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.165239] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6200:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.165304] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<float, std::ratio<1, 1000> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.165384] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.165443] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.165504] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.165563] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.165625] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.165684] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.165742] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.165801] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.165860] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.165938] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.165997] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6206:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.166066] (dtv_core) StderrLine: {'line': b' 6206 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[2.166125] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.166194] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6206:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.166249] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.166306] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.166353] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.166406] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:55\x1b[m\x1b[K,\n'}
+[2.166467] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/stdexcept:39\x1b[m\x1b[K,\n'}
+[2.166528] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/system_error:41\x1b[m\x1b[K,\n'}
+[2.166588] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/mutex:42\x1b[m\x1b[K,\n'}
+[2.166649] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.166708] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.166778] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.166837] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.166907] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6212:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::operator+(std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.166982] (dtv_core) StderrLine: {'line': b' 6212 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,\n'}
+[2.167046] (dtv_core) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.167109] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/basic_string.h:6212:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.167172] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.167247] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.167309] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.167378] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:39\x1b[m\x1b[K,\n'}
+[2.167451] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.167514] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.167588] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.167642] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.167717] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:646:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep1, class _Period1, class _Rep2, class _Period2> constexpr typename std::common_type<std::chrono::duration<_Rep1, _Period1>, std::chrono::duration<_Rep2, _Period2> >::type std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::duration<_Rep2, _Period2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.167798] (dtv_core) StderrLine: {'line': b'  646 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const duration<_Rep1, _Period1>& __lhs,\n'}
+[2.167859] (dtv_core) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.167935] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:646:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.168004] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.168083] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.168145] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.168206] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:39\x1b[m\x1b[K,\n'}
+[2.168267] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.168331] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.168398] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.168462] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.168538] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:1002:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Clock, class _Dur1, class _Rep2, class _Period2> constexpr std::chrono::time_point<_Clock, typename std::common_type<_Dur1, std::chrono::duration<_Rep2, _Period2> >::type> std::chrono::operator+(const std::chrono::time_point<_Clock, _Duration1>&, const std::chrono::duration<_Rep2, _Period2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.168604] (dtv_core) StderrLine: {'line': b' 1002 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const time_point<_Clock, _Dur1>& __lhs,\n'}
+[2.168665] (dtv_core) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.168727] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:1002:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.168790] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::time_point<_Clock, _Duration1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.168855] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.168927] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.168996] (dtv_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:39\x1b[m\x1b[K,\n'}
+[2.169056] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[2.169118] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[2.169180] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.169245] (dtv_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1\x1b[m\x1b[K:\n'}
+[2.169305] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:1016:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep1, class _Period1, class _Clock, class _Dur2> constexpr std::chrono::time_point<_Clock, typename std::common_type<std::chrono::duration<_Rep1, _Period1>, _Dur2>::type> std::chrono::operator+(const std::chrono::duration<_Rep1, _Period1>&, const std::chrono::time_point<_Clock, _Dur2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.169380] (dtv_core) StderrLine: {'line': b' 1016 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K+(const duration<_Rep1, _Period1>& __lhs,\n'}
+[2.169447] (dtv_core) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.169508] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/chrono:1016:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.169571] (dtv_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[2.169636] (dtv_core) StderrLine: {'line': b'   36 |             cmd_vel.angular.y = cmd_vel.angular.y + steer * dt * \x1b[01;36m\x1b[K1000\x1b[m\x1b[K;\n'}
+[2.169699] (dtv_core) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.208636] (-) TimerEvent: {}
+[2.309029] (-) TimerEvent: {}
+[2.409326] (-) TimerEvent: {}
+[2.509630] (-) TimerEvent: {}
+[2.609959] (-) TimerEvent: {}
+[2.710263] (-) TimerEvent: {}
+[2.810606] (-) TimerEvent: {}
+[2.911027] (-) TimerEvent: {}
+[3.011362] (-) TimerEvent: {}
+[3.111723] (-) TimerEvent: {}
+[3.212145] (-) TimerEvent: {}
+[3.312502] (-) TimerEvent: {}
+[3.412919] (-) TimerEvent: {}
+[3.513292] (-) TimerEvent: {}
+[3.613610] (-) TimerEvent: {}
+[3.713930] (-) TimerEvent: {}
+[3.814242] (-) TimerEvent: {}
+[3.914570] (-) TimerEvent: {}
+[3.924600] (dtv_core) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1\n'}
+[3.925019] (dtv_core) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2\n'}
+[3.925417] (dtv_core) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.928067] (dtv_core) CommandEnded: {'returncode': 2}
+[3.966165] (dtv_core) JobEnded: {'identifier': 'dtv_core', 'rc': 2}
+[3.976450] (-) EventReactorShutdown: {}

@@ -1,0 +1,10 @@
+[0.009s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.055s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[0.265s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/Twist.hpp: No such file or directory
+[0.265s]     9 | #include [01;31m[K<geometry_msgs/Twist.hpp>[m[K
+[0.265s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.265s] compilation terminated.
+[0.268s] gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+[0.268s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+[0.269s] gmake: *** [Makefile:146: all] Error 2
+[0.272s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

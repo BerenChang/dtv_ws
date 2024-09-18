@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::joystickCallback(const Joy&)[m[K’:
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:28:16:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kthis[m[K’
+   28 |             if [01;31m[Kthis[m[K->thrust > 0.01 or this->thrust < -0.01 {
+      |                [01;31m[K^~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   30 |             } [01;31m[Kelse[m[K {
+      |               [01;31m[K^~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:34:16:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kthis[m[K’
+   34 |             if [01;31m[Kthis[m[K->steer > 0.01 or this->steer < -0.01 {
+      |                [01;31m[K^~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:36:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   36 |             } [01;31m[Kelse[m[K {
+      |               [01;31m[K^~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:42:16:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kthrust_pressed[m[K’
+   42 |             if [01;31m[Kthrust_pressed[m[K {
+      |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:44:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   44 |             } [01;31m[Kelse[m[K {
+      |               [01;31m[K^~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:48:16:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Ksteer_pressed[m[K’
+   48 |             if [01;31m[Ksteer_pressed[m[K {
+      |                [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:50:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   50 |             } [01;31m[Kelse[m[K {
+      |               [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

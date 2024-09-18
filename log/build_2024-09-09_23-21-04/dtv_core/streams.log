@@ -1,0 +1,76 @@
+[0.010s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[0.067s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[1.959s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.959s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.959s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[1.959s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[1.959s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:39:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.960s]    39 |             RCLCPP_INFO(get_logger(), [01;35m[K"Publishing command: linear %d, angular %d"[m[K, [32m[Kcmd_vel.linear.x[m[K, cmd_vel.angular.y);
+[1.960s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~~[m[K
+[1.960s]       |                                                                                                   [32m[K|[m[K
+[1.960s]       |                                                                                                   [32m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_x_type {aka double}[m[K
+[1.960s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:39:68:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.960s]    39 |      RCLCPP_INFO(get_logger(), "Publishing command: linear [01;36m[K%d[m[K, angular %d", cmd_vel.linear.x, cmd_vel.angular.y);
+[1.960s]       |                                                            [01;36m[K~^[m[K
+[1.960s]       |                                                             [01;36m[K|[m[K
+[1.960s]       |                                                             [01;36m[Kint[m[K
+[1.960s]       |                                                            [32m[K%f[m[K
+[1.960s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.960s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.960s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[1.960s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:39:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type[m[K’ {aka ‘[01m[Kdouble[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.960s]    39 |             RCLCPP_INFO(get_logger(), [01;35m[K"Publishing command: linear %d, angular %d"[m[K, cmd_vel.linear.x, [32m[Kcmd_vel.angular.y[m[K);
+[1.960s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                    [32m[K~~~~~~~~~~~~~~~~~[m[K
+[1.960s]       |                                                                                                                      [32m[K|[m[K
+[1.960s]       |                                                                                                                      [32m[Kgeometry_msgs::msg::Vector3_<std::allocator<void> >::_y_type {aka double}[m[K
+[1.960s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:39:80:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.960s]    39 | INFO(get_logger(), "Publishing command: linear %d, angular [01;36m[K%d[m[K", cmd_vel.linear.x, cmd_vel.angular.y);
+[1.960s]       |                                                            [01;36m[K~^[m[K
+[1.960s]       |                                                             [01;36m[K|[m[K
+[1.960s]       |                                                             [01;36m[Kint[m[K
+[1.961s]       |                                                            [32m[K%f[m[K
+[5.900s] [100%] [32m[1mLinking CXX executable dtv_controller[0m
+[6.161s] [100%] Built target dtv_controller
+[6.172s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[6.212s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/beren/dtv_ws/build/dtv_core
+[6.217s] -- Install configuration: ""
+[6.218s] -- Execute custom install script
+[6.218s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/dtv.launch.py
+[6.218s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/dtv.launch.yaml
+[6.218s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core//launch/gz.launch.py
+[6.218s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/lib/dtv_core/dtv_controller
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/package_run_dependencies/dtv_core
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/parent_prefix_path/dtv_core
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.sh
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/ament_prefix_path.dsv
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.sh
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/environment/path.dsv
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.bash
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.sh
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.zsh
+[6.219s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/local_setup.dsv
+[6.219s] -- Symlinking: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.dsv
+[6.227s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/ament_index/resource_index/packages/dtv_core
+[6.227s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig.cmake
+[6.227s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/cmake/dtv_coreConfig-version.cmake
+[6.227s] -- Up-to-date symlink: /home/beren/dtv_ws/install/dtv_core/share/dtv_core/package.xml
+[6.230s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/beren/dtv_ws/build/dtv_core

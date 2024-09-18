@@ -1,0 +1,46 @@
+[0.009s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[1.724s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:37:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.724s]    37 |  rclcpp::Publisher<geometry_msgs/msg/Twist[01;31m[K>[m[K::SharedPtr cmd_vel_pub_;
+[1.725s]       |                                           [01;31m[K^[m[K
+[1.725s] 
+[1.725s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:37:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.725s]    37 | lcpp::Publisher<geometry_msgs/msg/Twist>::[01;31m[KSharedPtr[m[K cmd_vel_pub_;
+[1.725s]       |                                           [01;31m[K^~~~~~~~~[m[K
+[1.725s]       |                                                    [32m[K;[m[K
+[1.727s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:37:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ does not name a type
+[1.727s]    37 | isher<geometry_msgs/msg/Twist>::SharedPtr [01;31m[Kcmd_vel_pub_[m[K;
+[1.727s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[1.727s] 
+[1.739s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[1.739s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+[1.739s]    19 |             [01;31m[Kcmd_vel_pub_[m[K = this->create_publisher<geometry_msgs/msg/Twist>("/model/simple_tracked/cmd_vel", 100);
+[1.739s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[1.739s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:34:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.739s]    19 |             cmd_vel_pub_ = this->[01;31m[Kcreate_publisher<geometry_msgs/msg/Twist>[m[K("/model/simple_tracked/cmd_vel", 100);
+[1.739s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.739s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:75:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::create_publisher<<expression error> >(const char [30], int)[m[K’
+[1.739s]    19 | [01;31m[K>create_publisher<geometry_msgs/msg/Twist>("/model/simple_tracked/cmd_vel", 100)[m[K;
+[1.739s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.739s] 
+[1.739s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.739s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.740s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.740s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[1.740s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[1.740s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[1.740s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.740s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.740s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:19:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.740s]    19 | [01;31m[K>create_publisher<geometry_msgs/msg/Twist>("/model/simple_tracked/cmd_vel", 100)[m[K;
+[1.740s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.740s] 
+[1.750s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::timerCallback()[m[K’:
+[1.750s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:33:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+[1.750s]    33 |             [01;31m[Kcmd_vel_pub_[m[K->publish(cmd_vel);
+[1.750s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[3.395s] gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+[3.395s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+[3.395s] gmake: *** [Makefile:146: all] Error 2
+[3.398s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

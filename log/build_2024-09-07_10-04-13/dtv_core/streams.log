@@ -1,0 +1,213 @@
+[0.010s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.030s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.116s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.136s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.137s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.142s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.148s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.176s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.177s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.189s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.220s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.280s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.290s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.296s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.344s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.344s] -- Configured cppcheck include dirs: 
+[0.344s] -- Configured cppcheck exclude dirs and/or files: 
+[0.344s] -- Added test 'lint_cmake' to check CMake code style
+[0.345s] -- Added test 'uncrustify' to check C / C++ code style
+[0.345s] -- Configured uncrustify additional arguments: 
+[0.345s] -- Added test 'xmllint' to check XML markup files
+[0.345s] -- Configuring done
+[0.354s] -- Generating done
+[0.355s] -- Build files have been written to: /home/beren/dtv_ws/build/dtv_core
+[0.377s] [35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[0.392s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[2.114s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:21:48:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::msg::joy[m[K’ has not been declared
+[2.114s]    21 |        void joystickCallback(sensor_msgs::msg::[01;31m[Kjoy[m[K::SharedPtr msg) {
+[2.114s]       |                                                [01;31m[K^~~[m[K
+[2.115s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:21:63:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Kmsg[m[K’
+[2.115s]    21 |        void joystickCallback(sensor_msgs::msg::joy::SharedPtr [01;31m[Kmsg[m[K) {
+[2.115s]       |                                                               [01;31m[K^~~[m[K
+[2.115s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoy[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[KJoy[m[K’?
+[2.115s]    30 |        rclcpp::Subscription<sensor_msgs::msg::[01;31m[Kjoy[m[K>::SharedPtr joystick_sub_;
+[2.115s]       |                                               [01;31m[K^~~[m[K
+[2.115s]       |                                               [32m[KJoy[m[K
+[2.115s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.115s]    30 |        rclcpp::Subscription<sensor_msgs::msg::joy[01;31m[K>[m[K::SharedPtr joystick_sub_;
+[2.115s]       |                                                  [01;31m[K^[m[K
+[2.116s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.116s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.116s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.116s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.116s]    30 |        rclcpp::Subscription<sensor_msgs::msg::joy>::[01;31m[KSharedPtr[m[K joystick_sub_;
+[2.116s]       |                                                     [01;31m[K^~~~~~~~~[m[K
+[2.116s]       |                                                              [32m[K;[m[K
+[2.117s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoystick_sub_[m[K’ does not name a type
+[2.117s]    30 |      rclcpp::Subscription<sensor_msgs::msg::joy>::SharedPtr [01;31m[Kjoystick_sub_[m[K;
+[2.117s]       |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.117s] 
+[2.119s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[2.119s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:34:35:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::listener_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.119s]    34 |        tf2_ros::TransformListener [01;35m[Klistener_[m[K;
+[2.119s]       |                                   [01;35m[K^~~~~~~~~[m[K
+[2.119s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:31:45:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr Controller::last_msg_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.119s]    31 |        geometry_msgs::msg::Twist::SharedPtr [01;35m[Klast_msg_[m[K;
+[2.119s]       |                                             [01;35m[K^~~~~~~~~[m[K
+[2.119s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:14:8:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.119s]    14 |        [01;35m[KController[m[K() : Node("controller_node"), buffer_(this->get_clock()), listener_(buffer_), last_msg_{nullptr} {
+[2.119s]       |        [01;35m[K^~~~~~~~~~[m[K
+[2.124s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:15:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoystick_sub_[m[K’ was not declared in this scope
+[2.124s]    15 |            [01;31m[Kjoystick_sub_[m[K = this->create_subscription<sensor_msgs/msg/Joy>(
+[2.125s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[2.125s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:15:34:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.125s]    15 |            joystick_sub_ = this->[01;31m[Kcreate_subscription<sensor_msgs/msg/Joy>[m[K(
+[2.125s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.132s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:15:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::create_subscription<<expression error> >(const char [4], rclcpp::QoS, std::_Bind_helper<false, void (Controller::*)(int), Controller*, const std::_Placeholder<1>&>::type)[m[K’
+[2.132s]    15 |         joystick_sub_ = [01;31m[Kthis->create_subscription<sensor_msgs/msg/Joy>([m[K
+[2.132s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.132s] 
+[2.132s]    16 | [01;31m[K     "joy",[m[K
+[2.132s]       |      [01;31m[K~~~~~~[m[K                                                            
+[2.132s] 
+[2.133s]    17 | [01;31m[K     rclcpp::QoS(1),[m[K
+[2.133s]       |      [01;31m[K~~~~~~~~~~~~~~~[m[K                                                   
+[2.133s] 
+[2.133s]    18 | [01;31m[K     std::bind(&Controller::joystickCallback, this, std::placeholders::_1))[m[K;
+[2.133s]       |      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.133s] 
+[2.133s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.133s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.133s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.133s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[2.134s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.134s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[2.134s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.134s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.134s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:15:74:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.134s]    15 |         joystick_sub_ = [01;31m[Kthis->create_subscription<sensor_msgs/msg/Joy>([m[K
+[2.134s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.134s] 
+[2.134s]    16 | [01;31m[K     "joy",[m[K
+[2.134s]       |      [01;31m[K~~~~~~[m[K                                                            
+[2.134s] 
+[2.134s]    17 | [01;31m[K     rclcpp::QoS(1),[m[K
+[2.134s]       |      [01;31m[K~~~~~~~~~~~~~~~[m[K                                                   
+[2.134s] 
+[2.134s]    18 | [01;31m[K     std::bind(&Controller::joystickCallback, this, std::placeholders::_1))[m[K;
+[2.134s]       |      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.134s] 
+[2.134s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::joystickCallback(int)[m[K’:
+[2.134s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:22:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[2.134s]    22 |            last_msg_ = [01;31m[Kmsg[m[K;
+[2.134s]       |                        [01;31m[K^~~[m[K
+[2.134s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:22:24:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.134s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.135s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[2.135s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[2.135s]    27 | namespace [01;36m[Kmsg[m[K
+[2.135s]       |           [01;36m[K^~~[m[K
+[2.135s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.135s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[2.135s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[2.135s]    27 | namespace [01;36m[Kmsg[m[K
+[2.135s]       |           [01;36m[K^~~[m[K
+[2.135s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.136s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[2.136s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[2.136s]    27 | namespace [01;36m[Kmsg[m[K
+[2.136s]       |           [01;36m[K^~~[m[K
+[2.136s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:20[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.h:48[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:39[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:41[m[K,
+[2.136s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:3[m[K:
+[2.136s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[2.136s]    31 | namespace [01;36m[Kmsg[m[K
+[2.136s]       |           [01;36m[K^~~[m[K
+[2.136s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:20[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:22[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/tf2/tf2/buffer_core.h:48[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:39[m[K,
+[2.136s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:41[m[K,
+[2.136s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:3[m[K:
+[2.136s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[2.136s]    27 | namespace [01;36m[Kmsg[m[K
+[2.136s]       |           [01;36m[K^~~[m[K
+[2.136s] In file included from [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:44[m[K,
+[2.137s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:4[m[K:
+[2.137s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+[2.137s]    31 | namespace [01;36m[Kmsg[m[K
+[2.137s]       |           [01;36m[K^~~[m[K
+[2.137s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp:7[m[K,
+[2.137s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:5[m[K:
+[2.137s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[2.137s]    31 | namespace [01;36m[Kmsg[m[K
+[2.137s]       |           [01;36m[K^~~[m[K
+[2.137s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:21:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KSharedPtr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.137s]    21 |        void joystickCallback([01;35m[Ksensor_msgs::msg::joy::SharedPtr[m[K msg) {
+[2.137s]       |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[2.137s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::printCommand()[m[K’:
+[2.137s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:26:30:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs::msg::joy[m[K’ has not been declared
+[2.137s]    26 |            sensor_msgs::msg::[01;31m[Kjoy[m[K::SharedPtr p = last_msg_;
+[2.137s]       |                              [01;31m[K^~~[m[K
+[2.137s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.137s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[2.137s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:27:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+[2.138s]    27 |            RCLCPP_INFO(get_logger(), "Command: %f", &[01;31m[Kp[m[K);
+[2.138s]       |                                                      [01;31m[K^[m[K
+[2.470s] gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+[2.470s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+[2.470s] gmake: *** [Makefile:146: all] Error 2
+[2.473s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

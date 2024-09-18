@@ -1,0 +1,66 @@
+[0.011s] Invoking command in '/home/beren/dtv_ws/build/dtv_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[0.063s] [ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[1.828s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[1.828s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:33:35:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::listener_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.829s]    33 |        tf2_ros::TransformListener [01;35m[Klistener_[m[K;
+[1.829s]       |                                   [01;35m[K^~~~~~~~~[m[K
+[1.829s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:30:41:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Ksensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr Controller::last_msg_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.829s]    30 |        sensor_msgs::msg::Joy::SharedPtr [01;35m[Klast_msg_[m[K;
+[1.829s]       |                                         [01;35m[K^~~~~~~~~[m[K
+[1.829s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:14:8:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[1.829s]    14 |        [01;35m[KController[m[K() : Node("controller_node"), buffer_(this->get_clock()), listener_(buffer_), last_msg_{nullptr} {
+[1.829s]       |        [01;35m[K^~~~~~~~~~[m[K
+[1.832s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:15:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::create_subscription<sensor_msgs::msg::Joy>(const char [4], std::_Bind_helper<false, void (Controller::*)(std::shared_ptr<sensor_msgs::msg::Joy_<std::allocator<void> > >), Controller*, const std::_Placeholder<1>&>::type)[m[K’
+[1.832s]    15 |           joystick_sub_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg::Joy>([m[K
+[1.832s]       |                           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.832s] 
+[1.833s]    16 | [01;31m[K       "joy",[m[K
+[1.833s]       |        [01;31m[K~~~~~~[m[K                                                              
+[1.833s] 
+[1.833s]    17 | [01;31m[K       std::bind(&Controller::joystickCallback, this, std::placeholders::_1))[m[K;
+[1.833s]       |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.833s] 
+[1.833s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.833s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[1.833s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[1.833s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[1.833s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.833s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.833s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:15:76:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+[1.833s]    15 |           joystick_sub_ = [01;36m[Kthis->create_subscription<sensor_msgs::msg::Joy>([m[K
+[1.833s]       |                           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.833s] 
+[1.834s]    16 | [01;36m[K       "joy",[m[K
+[1.834s]       |        [01;36m[K~~~~~~[m[K                                                              
+[1.834s] 
+[1.834s]    17 | [01;36m[K       std::bind(&Controller::joystickCallback, this, std::placeholders::_1))[m[K;
+[1.834s]       |        [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.834s] 
+[1.834s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.834s]                  from [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:1[m[K:
+[1.834s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::printCommand()[m[K’:
+[1.834s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:26:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%g[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Ksensor_msgs::msg::Joy_<std::allocator<void> >::_axes_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.834s]    26 |            RCLCPP_INFO(get_logger(), [01;35m[K"Command: %g"[m[K, p->axes);
+[1.834s]       |                                      [01;35m[K^~~~~~~~~~~~~[m[K
+[1.834s] [01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:26:49:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.834s]    26 |            RCLCPP_INFO(get_logger(), "Command: [01;36m[K%g[m[K", p->axes);
+[1.834s]       |                                                [01;36m[K~^[m[K
+[1.835s]       |                                                 [01;36m[K|[m[K
+[1.835s]       |                                                 [01;36m[Kdouble[m[K
+[2.189s] gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+[2.190s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+[2.190s] gmake: *** [Makefile:146: all] Error 2
+[2.193s] Invoked command in '/home/beren/dtv_ws/build/dtv_core' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/beren/dtv_ws/build/dtv_core -- -j16 -l16

@@ -1,0 +1,4 @@
+source;share/dtv_core/local_setup.bash
+source;share/dtv_core/local_setup.dsv
+source;share/dtv_core/local_setup.sh
+source;share/dtv_core/local_setup.zsh

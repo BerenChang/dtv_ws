@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target dtv_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o[0m
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::joystickCallback(const Joy&) const[m[K’:
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:22:25:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KController::thrust[m[K’ in read-only object
+   22 |            this->thrust = msg.axes[1];
+[01m[K/home/beren/dtv_ws/src/dtv_core/src/dtv_controller.cpp:23:24:[m[K [01;31m[Kerror: [m[Kassignment of member ‘[01m[KController::steer[m[K’ in read-only object
+   23 |            this->steer = msg.axes[3];
+gmake[2]: *** [CMakeFiles/dtv_controller.dir/build.make:76: CMakeFiles/dtv_controller.dir/src/dtv_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dtv_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,12 @@
+ros2 launch teleop_twist_joy teleop-launch.py joy_config:='xbox'
+
+ros2 run dtv_core dtv_controller
+
+##################################################################
+
+gz sim /home/beren/dtv_ws/src/dtv_core/world/dtv.sdf
+
+source /home/beren/dtv_ws/install/setup.bash
+
+ros2 launch dtv_core dtv.launch.py
+
