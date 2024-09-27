@@ -68,7 +68,7 @@
                 <pose>0 0 0 0 0 0</pose>
                 <inertial>
                     <pose>0.05 0 0.118 1.5708 0 0</pose>
-                    <mass>40</mass>
+                    <mass>13.14</mass>
                     <inertia>
                         <ixx>0.10019</ixx>
                         <ixy>0</ixy>
@@ -82,7 +82,7 @@
                     <pose>0.05 0 0.118 0 0 0</pose>
                     <geometry>
                         <box>
-                            <size>0.8 0.24093 0.139</size>
+                            <size>0.50017 0.24093 0.139</size>
                         </box>
                     </geometry>
                 </collision>
@@ -90,26 +90,8 @@
                     <pose>0.05 0 0.118 0 0 0</pose>
                     <geometry>
                         <box>
-                            <size>0.8 0.24093 0.139</size>
+                            <size>0.50017 0.24093 0.139</size>
                         </box>
-                    </geometry>
-                </visual>
-                <visual name='handle_box_visual'>
-                    <!-- <pose>0.36317 0 0.7304 0 1.39626 0</pose> -->
-                    <pose>0.33317 0 0.6304 0 1.39626 0</pose>
-                    <geometry>
-                        <box>
-                            <size>1.0 0.15 0.05</size>
-                        </box>
-                    </geometry>
-                </visual>
-                <visual name='handle_cylinder_visual'>
-                    <pose>0.25535 0 1.1228 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.4</length>
-                            <radius>0.03</radius>
-                        </cylinder>
                     </geometry>
                 </visual>
                 <self_collide>0</self_collide>
@@ -123,7 +105,7 @@
                 <pose>0 0.1985 0 0 0 0</pose>
                 <inertial>
                     <pose>0 0 0.0141 0 0 0</pose>
-                    <mass>30</mass>
+                    <mass>6.06</mass>
                     <inertia>
                         <ixx>0.002731</ixx>
                         <ixy>0</ixy>
@@ -134,21 +116,12 @@
                     </inertia>
                 </inertial>
                 
-                <visual name='left_track_visual_cylinder_1'>
-                    <pose>0.42499 0 0.0655 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
                 <collision name='left_track_collision_cylinder_1'>
-                    <pose>0.42499 0 0.0655 1.5708 0 0</pose>
+                    <pose>0.25 0 0.01855 1.5708 0 0</pose>
                     <geometry>
                         <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
                         </cylinder>
                     </geometry>
                     <surface>
@@ -162,22 +135,12 @@
                         </friction>
                     </surface>
                 </collision>
-                
-                <visual name='left_track_visual_cylinder_2'>
-                    <pose>-0.42499 0 0.076 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.076</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
                 <collision name='left_track_collision_cylinder_2'>
-                    <pose>-0.42499 0 0.076 1.5708 0 0</pose>
+                    <pose>-0.25 0 0.01855 1.5708 0 0</pose>
                     <geometry>
                         <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.076</radius>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
                         </cylinder>
                     </geometry>
                     <surface>
@@ -191,32 +154,12 @@
                         </friction>
                     </surface>
                 </collision>
-                
-                <visual name='left_track_visual_cylinder_3'>
-                    <pose>0.00788 0 0.19373 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
-                
-                <visual name='left_track_visual_cylinder_4'>
-                    <pose>0.54982 0 0.1208 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
                 <collision name='left_track_collision_cylinder_4'>
-                    <pose>0.54982 0 0.1208 1.5708 0 0</pose>
+                    <pose>0.3 0 0.1 1.5708 0 0</pose>
                     <geometry>
                         <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
                         </cylinder>
                     </geometry>
                     <surface>
@@ -230,78 +173,112 @@
                         </friction>
                     </surface>
                 </collision>
+                <collision name='left_track_collision_box_1'>
+                    <pose>0 0 0.01855 1.5708 0 1.5708</pose>
+                    <geometry>
+                        <box>
+                            <size>0.09728 0.18094 0.5</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <!-- <mu>0.7</mu> -->
+                                <mu>0.9</mu>
+                                <mu2>150</mu2>
+                                <fdir1>0 1 0</fdir1>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <collision name='left_track_collision_box_4'>
+                    <pose>0.275 0 0.05928 0.55058 0 1.5708</pose>
+                    <geometry>
+                        <box>
+                            <size>0.09728 0.18094 0.09557</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <!-- <mu>0.7</mu> -->
+                                <mu>0.9</mu>
+                                <mu2>150</mu2>
+                                <fdir1>0 1 0</fdir1>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                
+                <visual name='left_track_visual_cylinder_1'>
+                    <pose>0.25 0 0.01855 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <visual name='left_track_visual_cylinder_2'>
+                    <pose>-0.25 0 0.01855 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <visual name='left_track_visual_cylinder_3'>
+                    <pose>-0.05 0 0.15 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <visual name='left_track_visual_cylinder_4'>
+                    <pose>0.3 0 0.1 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
                 
                 <visual name='left_track_visual_box_1'>
-                    <pose>0 0 0.0655 1.5708 0 1.5708</pose>
+                    <pose>0 0 0.01855 1.5708 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.84999</size>
+                            <size>0.09728 0.18094 0.5</size>
                         </box>
                     </geometry>
                 </visual>
-                <collision name='left_track_collision_box_1'>
-                    <pose>0 0 0.0655 1.5708 0 1.5708</pose>
-                    <geometry>
-                        <box>
-                            <size>0.1322 0.131 0.84999</size>
-                        </box>
-                    </geometry>
-                    <surface>
-                        <friction>
-                            <ode>
-                                <!-- <mu>0.7</mu> -->
-                                <mu>0.9</mu>
-                                <mu2>150</mu2>
-                                <fdir1>0 1 0</fdir1>
-                            </ode>
-                        </friction>
-                    </surface>
-                </collision>
-                
                 <visual name='left_track_visual_box_2'>
-                    <pose>-0.19902 0 0.15522 1.38677 0 1.5708</pose>
+                    <pose>-0.15 0 0.08428 0.98935 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.45692</size>
+                            <size>0.09728 0.18094 0.23933</size>
                         </box>
                     </geometry>
                 </visual>
-                
                 <visual name='left_track_visual_box_3'>
-                    <pose>0.27885 0 0.15727 -1.43701 0 1.5708</pose>
+                    <pose>0.125 0 0.125 -1.4289 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.54683</size>
+                            <size>0.09728 0.18094 0.35355</size>
                         </box>
                     </geometry>
                 </visual>
-                
                 <visual name='left_track_visual_box_4'>
-                    <pose>0.48741 0 0.09315 1.15378 0 1.5708</pose>
+                    <pose>0.275 0 0.05928 0.55058 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.13653</size>
+                            <size>0.09728 0.18094 0.09557</size>
                         </box>
                     </geometry>
                 </visual>
-                <collision name='left_track_collision_box_4'>
-                    <pose>0.48741 0 0.9315 0.55058 0 1.5708</pose>
-                    <geometry>
-                        <box>
-                            <size>0.1322 0.131 0.13653</size>
-                        </box>
-                    </geometry>
-                    <surface>
-                        <friction>
-                            <ode>
-                                <!-- <mu>0.7</mu> -->
-                                <mu>0.9</mu>
-                                <mu2>150</mu2>
-                                <fdir1>0 1 0</fdir1>
-                            </ode>
-                        </friction>
-                    </surface>
-                </collision>
                 
                 <gravity>1</gravity>
                 <kinematic>0</kinematic>
@@ -317,7 +294,7 @@
                 <pose>0 -0.1985 0 0 0 0</pose>
                 <inertial>
                     <pose>0 0 0.0141 0 0 0</pose>
-                    <mass>30</mass>
+                    <mass>6.06</mass>
                     <inertia>
                         <ixx>0.002731</ixx>
                         <ixy>0</ixy>
@@ -328,21 +305,12 @@
                     </inertia>
                 </inertial>
                 
-                <visual name='right_track_visual_cylinder_1'>
-                    <pose>0.42499 0 0.0655 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
                 <collision name='right_track_collision_cylinder_1'>
-                    <pose>0.42499 0 0.0655 1.5708 0 0</pose>
+                    <pose>0.25 0 0.01855 1.5708 0 0</pose>
                     <geometry>
                         <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
                         </cylinder>
                     </geometry>
                     <surface>
@@ -356,22 +324,12 @@
                         </friction>
                     </surface>
                 </collision>
-                
-                <visual name='right_track_visual_cylinder_2'>
-                    <pose>-0.42499 0 0.076 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.076</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
                 <collision name='right_track_collision_cylinder_2'>
-                    <pose>-0.42499 0 0.076 1.5708 0 0</pose>
+                    <pose>-0.25 0 0.01855 1.5708 0 0</pose>
                     <geometry>
                         <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.076</radius>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
                         </cylinder>
                     </geometry>
                     <surface>
@@ -385,32 +343,12 @@
                         </friction>
                     </surface>
                 </collision>
-                
-                <visual name='right_track_visual_cylinder_3'>
-                    <pose>0.00788 0 0.19373 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
-                
-                <visual name='right_track_visual_cylinder_4'>
-                    <pose>0.54982 0 0.1208 1.5708 0 0</pose>
-                    <geometry>
-                        <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
-                        </cylinder>
-                    </geometry>
-                </visual>
                 <collision name='right_track_collision_cylinder_4'>
-                    <pose>0.54982 0 0.1208 1.5708 0 0</pose>
+                    <pose>0.3 0 0.1 1.5708 0 0</pose>
                     <geometry>
                         <cylinder>
-                            <length>0.1322</length>
-                            <radius>0.0655</radius>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
                         </cylinder>
                     </geometry>
                     <surface>
@@ -424,79 +362,112 @@
                         </friction>
                     </surface>
                 </collision>
+                <collision name='right_track_collision_box_1'>
+                    <pose>0 0 0.01855 1.5708 0 1.5708</pose>
+                    <geometry>
+                        <box>
+                            <size>0.09728 0.18094 0.5</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <!-- <mu>0.7</mu> -->
+                                <mu>0.9</mu>
+                                <mu2>150</mu2>
+                                <fdir1>0 1 0</fdir1>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                <collision name='right_track_collision_box_4'>
+                    <pose>0.275 0 0.05928 0.55058 0 1.5708</pose>
+                    <geometry>
+                        <box>
+                            <size>0.09728 0.18094 0.09557</size>
+                        </box>
+                    </geometry>
+                    <surface>
+                        <friction>
+                            <ode>
+                                <!-- <mu>0.7</mu> -->
+                                <mu>0.9</mu>
+                                <mu2>150</mu2>
+                                <fdir1>0 1 0</fdir1>
+                            </ode>
+                        </friction>
+                    </surface>
+                </collision>
+                
+                <visual name='right_track_visual_cylinder_1'>
+                    <pose>0.25 0 0.01855 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <visual name='right_track_visual_cylinder_2'>
+                    <pose>-0.25 0 0.01855 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <visual name='right_track_visual_cylinder_3'>
+                    <pose>-0.05 0 0.15 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
+                <visual name='right_track_visual_cylinder_4'>
+                    <pose>0.3 0 0.1 1.5708 0 0</pose>
+                    <geometry>
+                        <cylinder>
+                            <length>0.09728</length>
+                            <radius>0.09047</radius>
+                        </cylinder>
+                    </geometry>
+                </visual>
                 
                 <visual name='right_track_visual_box_1'>
-                    <pose>0 0 0.0655 1.5708 0 1.5708</pose>
+                    <pose>0 0 0.01855 1.5708 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.84999</size>
+                            <size>0.09728 0.18094 0.5</size>
                         </box>
                     </geometry>
                 </visual>
-                <collision name='right_track_collision_box_1'>
-                    <pose>0 0 0.0655 1.5708 0 1.5708</pose>
-                    <geometry>
-                        <box>
-                            <size>0.1322 0.131 0.84999</size>
-                        </box>
-                    </geometry>
-                    <surface>
-                        <friction>
-                            <ode>
-                                <!-- <mu>0.7</mu> -->
-                                <mu>0.9</mu>
-                                <mu2>150</mu2>
-                                <fdir1>0 1 0</fdir1>
-                            </ode>
-                        </friction>
-                    </surface>
-                </collision>
-                
                 <visual name='right_track_visual_box_2'>
-                    <pose>-0.19902 0 0.15522 1.38677 0 1.5708</pose>
+                    <pose>-0.15 0 0.08428 0.98935 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.45692</size>
+                            <size>0.09728 0.18094 0.23933</size>
                         </box>
                     </geometry>
                 </visual>
-                
                 <visual name='right_track_visual_box_3'>
-                    <pose>0.27885 0 0.15727 -1.43701 0 1.5708</pose>
+                    <pose>0.125 0 0.125 -1.4289 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.54683</size>
+                            <size>0.09728 0.18094 0.35355</size>
                         </box>
                     </geometry>
                 </visual>
-                
                 <visual name='right_track_visual_box_4'>
-                    <pose>0.48741 0 0.09315 1.15378 0 1.5708</pose>
+                    <pose>0.275 0 0.05928 0.55058 0 1.5708</pose>
                     <geometry>
                         <box>
-                            <size>0.1322 0.131 0.13653</size>
+                            <size>0.09728 0.18094 0.09557</size>
                         </box>
                     </geometry>
                 </visual>
-                <collision name='right_track_collision_box_4'>
-                    <pose>0.48741 0 0.9315 0.55058 0 1.5708</pose>
-                    <geometry>
-                        <box>
-                            <size>0.1322 0.131 0.13653</size>
-                        </box>
-                    </geometry>
-                    <surface>
-                        <friction>
-                            <ode>
-                                <!-- <mu>0.7</mu> -->
-                                <mu>0.9</mu>
-                                <mu2>150</mu2>
-                                <fdir1>0 1 0</fdir1>
-                            </ode>
-                        </friction>
-                    </surface>
-                </collision>
-
                 <gravity>1</gravity>
                 <kinematic>0</kinematic>
             </link>
